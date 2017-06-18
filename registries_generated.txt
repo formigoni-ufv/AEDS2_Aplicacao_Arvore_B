@@ -1,0 +1,60 @@
+Admission Number: 1
+Name            : Frances Schwartz
+Admission Date  : 12/6/2016
+Age             : 32
+Occupation      : Retired
+Civil           : Married
+Admission Number: 2
+Name            : Jana Pierce
+Admission Date  : 4/2/2016
+Age             : 62
+Occupation      : Unemployed
+Civil           : Single
+Admission Number: 3
+Name            : Wanda Lynch
+Admission Date  : 2/9/2015
+Age             : 22
+Occupation      : Employed
+Civil           : Widow(er)
+Admission Number: 4
+Name            : Milton Fleming
+Admission Date  : 4/6/2016
+Age             : 72
+Occupation      : Employed
+Civil           : MARRIED_TO_AN_APACHE_HELICOPTER
+Admission Number: 5
+Name            : Juan Reyes
+Admission Date  : 28/9/2015
+Age             : 43
+Occupation      : Unemployed
+Civil           : MARRIED_TO_AN_APACHE_HELICOPTER
+Admission Number: 6
+Name            : Holly Fuller
+Admission Date  : 11/4/2017
+Age             : 62
+Occupation      : Employed
+Civil           : Single
+Admission Number: 7
+Name            : Betty Leonard
+Admission Date  : 21/11/2016
+Age             : 57
+Occupation      : Unemployed
+Civil           : MARRIED_TO_AN_APACHE_HELICOPTER
+Admission Number: 8
+Name            : Wallace Kim
+Admission Date  : 20/6/2015
+Age             : 73
+Occupation      : Employed
+Civil           : Single
+Admission Number: 9
+Name            : Andrew Owen
+Admission Date  : 13/11/2017
+Age             : 55
+Occupation      : Retired
+Civil           : Married
+Admission Number: 10
+Name            : Ronald Walker
+Admission Date  : 27/3/2015
+Age             : 81
+Occupation      : Employed
+Civil           : MARRIED_TO_AN_APACHE_HELICOPTER
