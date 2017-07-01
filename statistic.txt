@@ -1,0 +1,3 @@
+Reads: 0
+Writes: 0
+Comparisons: 2

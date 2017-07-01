@@ -27,8 +27,8 @@
 					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Cloud_Storage/Google Drive/Faculdade/Semestre 3/AEDS II/Trabalhos Praticos/AEDS2_Aplicacao_Arvore_B/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="tree">
-				<Option output="D:/Cloud_Storage/Google Drive/Faculdade/Semestre 3/AEDS II/Trabalhos Praticos/AEDS2_Aplicacao_Arvore_B/cmake-build-debug/tree.exe" prefix_auto="0" extension_auto="0"/>
+			<Target title="btree">
+				<Option output="D:/Cloud_Storage/Google Drive/Faculdade/Semestre 3/AEDS II/Trabalhos Praticos/AEDS2_Aplicacao_Arvore_B/cmake-build-debug/btree.exe" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="D:/Cloud_Storage/Google Drive/Faculdade/Semestre 3/AEDS II/Trabalhos Praticos/AEDS2_Aplicacao_Arvore_B/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -42,14 +42,14 @@
 					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/5.3.0/include-fixed"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Cloud_Storage/Google Drive/Faculdade/Semestre 3/AEDS II/Trabalhos Praticos/AEDS2_Aplicacao_Arvore_B/cmake-build-debug/Makefile&quot;  VERBOSE=1 tree"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Cloud_Storage/Google Drive/Faculdade/Semestre 3/AEDS II/Trabalhos Praticos/AEDS2_Aplicacao_Arvore_B/cmake-build-debug/Makefile&quot;  VERBOSE=1 btree"/>
 					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Cloud_Storage/Google Drive/Faculdade/Semestre 3/AEDS II/Trabalhos Praticos/AEDS2_Aplicacao_Arvore_B/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Cloud_Storage/Google Drive/Faculdade/Semestre 3/AEDS II/Trabalhos Praticos/AEDS2_Aplicacao_Arvore_B/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Cloud_Storage/Google Drive/Faculdade/Semestre 3/AEDS II/Trabalhos Praticos/AEDS2_Aplicacao_Arvore_B/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="tree/fast">
-				<Option output="D:/Cloud_Storage/Google Drive/Faculdade/Semestre 3/AEDS II/Trabalhos Praticos/AEDS2_Aplicacao_Arvore_B/cmake-build-debug/tree.exe" prefix_auto="0" extension_auto="0"/>
+			<Target title="btree/fast">
+				<Option output="D:/Cloud_Storage/Google Drive/Faculdade/Semestre 3/AEDS II/Trabalhos Praticos/AEDS2_Aplicacao_Arvore_B/cmake-build-debug/btree.exe" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="D:/Cloud_Storage/Google Drive/Faculdade/Semestre 3/AEDS II/Trabalhos Praticos/AEDS2_Aplicacao_Arvore_B/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -63,7 +63,7 @@
 					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/5.3.0/include-fixed"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Cloud_Storage/Google Drive/Faculdade/Semestre 3/AEDS II/Trabalhos Praticos/AEDS2_Aplicacao_Arvore_B/cmake-build-debug/Makefile&quot;  VERBOSE=1 tree/fast"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Cloud_Storage/Google Drive/Faculdade/Semestre 3/AEDS II/Trabalhos Praticos/AEDS2_Aplicacao_Arvore_B/cmake-build-debug/Makefile&quot;  VERBOSE=1 btree/fast"/>
 					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Cloud_Storage/Google Drive/Faculdade/Semestre 3/AEDS II/Trabalhos Praticos/AEDS2_Aplicacao_Arvore_B/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Cloud_Storage/Google Drive/Faculdade/Semestre 3/AEDS II/Trabalhos Praticos/AEDS2_Aplicacao_Arvore_B/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Cloud_Storage/Google Drive/Faculdade/Semestre 3/AEDS II/Trabalhos Praticos/AEDS2_Aplicacao_Arvore_B/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -81,25 +81,31 @@
 			</Target>
 		</Build>
 		<Unit filename="D:/Cloud_Storage/Google Drive/Faculdade/Semestre 3/AEDS II/Trabalhos Praticos/AEDS2_Aplicacao_Arvore_B/b_tree.c">
-			<Option target="tree"/>
+			<Option target="btree"/>
 		</Unit>
 		<Unit filename="D:/Cloud_Storage/Google Drive/Faculdade/Semestre 3/AEDS II/Trabalhos Praticos/AEDS2_Aplicacao_Arvore_B/b_tree.h">
-			<Option target="tree"/>
+			<Option target="btree"/>
 		</Unit>
 		<Unit filename="D:/Cloud_Storage/Google Drive/Faculdade/Semestre 3/AEDS II/Trabalhos Praticos/AEDS2_Aplicacao_Arvore_B/main.c">
-			<Option target="tree"/>
+			<Option target="btree"/>
 		</Unit>
-		<Unit filename="D:/Cloud_Storage/Google Drive/Faculdade/Semestre 3/AEDS II/Trabalhos Praticos/AEDS2_Aplicacao_Arvore_B/registries_generator.c">
-			<Option target="tree"/>
+		<Unit filename="D:/Cloud_Storage/Google Drive/Faculdade/Semestre 3/AEDS II/Trabalhos Praticos/AEDS2_Aplicacao_Arvore_B/registry/registries_generator.c">
+			<Option target="btree"/>
 		</Unit>
-		<Unit filename="D:/Cloud_Storage/Google Drive/Faculdade/Semestre 3/AEDS II/Trabalhos Praticos/AEDS2_Aplicacao_Arvore_B/registries_generator.h">
-			<Option target="tree"/>
+		<Unit filename="D:/Cloud_Storage/Google Drive/Faculdade/Semestre 3/AEDS II/Trabalhos Praticos/AEDS2_Aplicacao_Arvore_B/registry/registries_generator.h">
+			<Option target="btree"/>
 		</Unit>
-		<Unit filename="D:/Cloud_Storage/Google Drive/Faculdade/Semestre 3/AEDS II/Trabalhos Praticos/AEDS2_Aplicacao_Arvore_B/registry.c">
-			<Option target="tree"/>
+		<Unit filename="D:/Cloud_Storage/Google Drive/Faculdade/Semestre 3/AEDS II/Trabalhos Praticos/AEDS2_Aplicacao_Arvore_B/registry/registry.c">
+			<Option target="btree"/>
 		</Unit>
-		<Unit filename="D:/Cloud_Storage/Google Drive/Faculdade/Semestre 3/AEDS II/Trabalhos Praticos/AEDS2_Aplicacao_Arvore_B/registry.h">
-			<Option target="tree"/>
+		<Unit filename="D:/Cloud_Storage/Google Drive/Faculdade/Semestre 3/AEDS II/Trabalhos Praticos/AEDS2_Aplicacao_Arvore_B/registry/registry.h">
+			<Option target="btree"/>
+		</Unit>
+		<Unit filename="D:/Cloud_Storage/Google Drive/Faculdade/Semestre 3/AEDS II/Trabalhos Praticos/AEDS2_Aplicacao_Arvore_B/statistic.c">
+			<Option target="btree"/>
+		</Unit>
+		<Unit filename="D:/Cloud_Storage/Google Drive/Faculdade/Semestre 3/AEDS II/Trabalhos Praticos/AEDS2_Aplicacao_Arvore_B/statistic.h">
+			<Option target="btree"/>
 		</Unit>
 		<Unit filename="D:/Cloud_Storage/Google Drive/Faculdade/Semestre 3/AEDS II/Trabalhos Praticos/AEDS2_Aplicacao_Arvore_B/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>

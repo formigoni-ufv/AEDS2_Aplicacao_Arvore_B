@@ -38,10 +38,10 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2017.1.1\bin\cmake\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2017.1.3\bin\cmake\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "C:\Program Files\JetBrains\CLion 2017.1.1\bin\cmake\bin\cmake.exe" -E remove -f
+RM = "C:\Program Files\JetBrains\CLion 2017.1.3\bin\cmake\bin\cmake.exe" -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -58,7 +58,7 @@ CMAKE_BINARY_DIR = "D:\Cloud_Storage\Google Drive\Faculdade\Semestre 3\AEDS II\T
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	"C:\Program Files\JetBrains\CLion 2017.1.1\bin\cmake\bin\cmake.exe" -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	"C:\Program Files\JetBrains\CLion 2017.1.3\bin\cmake\bin\cmake.exe" -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -69,7 +69,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	"C:\Program Files\JetBrains\CLion 2017.1.1\bin\cmake\bin\cmake.exe" -E echo "No interactive CMake dialog available."
+	"C:\Program Files\JetBrains\CLion 2017.1.3\bin\cmake\bin\cmake.exe" -E echo "No interactive CMake dialog available."
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -110,17 +110,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named tree
+# Target rules for targets named btree
 
 # Build rule for target.
-tree: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 tree
-.PHONY : tree
+btree: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 btree
+.PHONY : btree
 
 # fast build rule for target.
-tree/fast:
-	$(MAKE) -f CMakeFiles\tree.dir\build.make CMakeFiles/tree.dir/build
-.PHONY : tree/fast
+btree/fast:
+	$(MAKE) -f CMakeFiles\btree.dir\build.make CMakeFiles/btree.dir/build
+.PHONY : btree/fast
 
 b_tree.obj: b_tree.c.obj
 
@@ -128,7 +128,7 @@ b_tree.obj: b_tree.c.obj
 
 # target to build an object file
 b_tree.c.obj:
-	$(MAKE) -f CMakeFiles\tree.dir\build.make CMakeFiles/tree.dir/b_tree.c.obj
+	$(MAKE) -f CMakeFiles\btree.dir\build.make CMakeFiles/btree.dir/b_tree.c.obj
 .PHONY : b_tree.c.obj
 
 b_tree.i: b_tree.c.i
@@ -137,7 +137,7 @@ b_tree.i: b_tree.c.i
 
 # target to preprocess a source file
 b_tree.c.i:
-	$(MAKE) -f CMakeFiles\tree.dir\build.make CMakeFiles/tree.dir/b_tree.c.i
+	$(MAKE) -f CMakeFiles\btree.dir\build.make CMakeFiles/btree.dir/b_tree.c.i
 .PHONY : b_tree.c.i
 
 b_tree.s: b_tree.c.s
@@ -146,7 +146,7 @@ b_tree.s: b_tree.c.s
 
 # target to generate assembly for a file
 b_tree.c.s:
-	$(MAKE) -f CMakeFiles\tree.dir\build.make CMakeFiles/tree.dir/b_tree.c.s
+	$(MAKE) -f CMakeFiles\btree.dir\build.make CMakeFiles/btree.dir/b_tree.c.s
 .PHONY : b_tree.c.s
 
 main.obj: main.c.obj
@@ -155,7 +155,7 @@ main.obj: main.c.obj
 
 # target to build an object file
 main.c.obj:
-	$(MAKE) -f CMakeFiles\tree.dir\build.make CMakeFiles/tree.dir/main.c.obj
+	$(MAKE) -f CMakeFiles\btree.dir\build.make CMakeFiles/btree.dir/main.c.obj
 .PHONY : main.c.obj
 
 main.i: main.c.i
@@ -164,7 +164,7 @@ main.i: main.c.i
 
 # target to preprocess a source file
 main.c.i:
-	$(MAKE) -f CMakeFiles\tree.dir\build.make CMakeFiles/tree.dir/main.c.i
+	$(MAKE) -f CMakeFiles\btree.dir\build.make CMakeFiles/btree.dir/main.c.i
 .PHONY : main.c.i
 
 main.s: main.c.s
@@ -173,62 +173,89 @@ main.s: main.c.s
 
 # target to generate assembly for a file
 main.c.s:
-	$(MAKE) -f CMakeFiles\tree.dir\build.make CMakeFiles/tree.dir/main.c.s
+	$(MAKE) -f CMakeFiles\btree.dir\build.make CMakeFiles/btree.dir/main.c.s
 .PHONY : main.c.s
 
-registries_generator.obj: registries_generator.c.obj
+registry/registries_generator.obj: registry/registries_generator.c.obj
 
-.PHONY : registries_generator.obj
-
-# target to build an object file
-registries_generator.c.obj:
-	$(MAKE) -f CMakeFiles\tree.dir\build.make CMakeFiles/tree.dir/registries_generator.c.obj
-.PHONY : registries_generator.c.obj
-
-registries_generator.i: registries_generator.c.i
-
-.PHONY : registries_generator.i
-
-# target to preprocess a source file
-registries_generator.c.i:
-	$(MAKE) -f CMakeFiles\tree.dir\build.make CMakeFiles/tree.dir/registries_generator.c.i
-.PHONY : registries_generator.c.i
-
-registries_generator.s: registries_generator.c.s
-
-.PHONY : registries_generator.s
-
-# target to generate assembly for a file
-registries_generator.c.s:
-	$(MAKE) -f CMakeFiles\tree.dir\build.make CMakeFiles/tree.dir/registries_generator.c.s
-.PHONY : registries_generator.c.s
-
-registry.obj: registry.c.obj
-
-.PHONY : registry.obj
+.PHONY : registry/registries_generator.obj
 
 # target to build an object file
-registry.c.obj:
-	$(MAKE) -f CMakeFiles\tree.dir\build.make CMakeFiles/tree.dir/registry.c.obj
-.PHONY : registry.c.obj
+registry/registries_generator.c.obj:
+	$(MAKE) -f CMakeFiles\btree.dir\build.make CMakeFiles/btree.dir/registry/registries_generator.c.obj
+.PHONY : registry/registries_generator.c.obj
 
-registry.i: registry.c.i
+registry/registries_generator.i: registry/registries_generator.c.i
 
-.PHONY : registry.i
+.PHONY : registry/registries_generator.i
 
 # target to preprocess a source file
-registry.c.i:
-	$(MAKE) -f CMakeFiles\tree.dir\build.make CMakeFiles/tree.dir/registry.c.i
-.PHONY : registry.c.i
+registry/registries_generator.c.i:
+	$(MAKE) -f CMakeFiles\btree.dir\build.make CMakeFiles/btree.dir/registry/registries_generator.c.i
+.PHONY : registry/registries_generator.c.i
 
-registry.s: registry.c.s
+registry/registries_generator.s: registry/registries_generator.c.s
 
-.PHONY : registry.s
+.PHONY : registry/registries_generator.s
 
 # target to generate assembly for a file
-registry.c.s:
-	$(MAKE) -f CMakeFiles\tree.dir\build.make CMakeFiles/tree.dir/registry.c.s
-.PHONY : registry.c.s
+registry/registries_generator.c.s:
+	$(MAKE) -f CMakeFiles\btree.dir\build.make CMakeFiles/btree.dir/registry/registries_generator.c.s
+.PHONY : registry/registries_generator.c.s
+
+registry/registry.obj: registry/registry.c.obj
+
+.PHONY : registry/registry.obj
+
+# target to build an object file
+registry/registry.c.obj:
+	$(MAKE) -f CMakeFiles\btree.dir\build.make CMakeFiles/btree.dir/registry/registry.c.obj
+.PHONY : registry/registry.c.obj
+
+registry/registry.i: registry/registry.c.i
+
+.PHONY : registry/registry.i
+
+# target to preprocess a source file
+registry/registry.c.i:
+	$(MAKE) -f CMakeFiles\btree.dir\build.make CMakeFiles/btree.dir/registry/registry.c.i
+.PHONY : registry/registry.c.i
+
+registry/registry.s: registry/registry.c.s
+
+.PHONY : registry/registry.s
+
+# target to generate assembly for a file
+registry/registry.c.s:
+	$(MAKE) -f CMakeFiles\btree.dir\build.make CMakeFiles/btree.dir/registry/registry.c.s
+.PHONY : registry/registry.c.s
+
+statistic.obj: statistic.c.obj
+
+.PHONY : statistic.obj
+
+# target to build an object file
+statistic.c.obj:
+	$(MAKE) -f CMakeFiles\btree.dir\build.make CMakeFiles/btree.dir/statistic.c.obj
+.PHONY : statistic.c.obj
+
+statistic.i: statistic.c.i
+
+.PHONY : statistic.i
+
+# target to preprocess a source file
+statistic.c.i:
+	$(MAKE) -f CMakeFiles\btree.dir\build.make CMakeFiles/btree.dir/statistic.c.i
+.PHONY : statistic.c.i
+
+statistic.s: statistic.c.s
+
+.PHONY : statistic.s
+
+# target to generate assembly for a file
+statistic.c.s:
+	$(MAKE) -f CMakeFiles\btree.dir\build.make CMakeFiles/btree.dir/statistic.c.s
+.PHONY : statistic.c.s
 
 # Help Target
 help:
@@ -237,7 +264,7 @@ help:
 	@echo ... clean
 	@echo ... depend
 	@echo ... rebuild_cache
-	@echo ... tree
+	@echo ... btree
 	@echo ... edit_cache
 	@echo ... b_tree.obj
 	@echo ... b_tree.i
@@ -245,12 +272,15 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
-	@echo ... registries_generator.obj
-	@echo ... registries_generator.i
-	@echo ... registries_generator.s
-	@echo ... registry.obj
-	@echo ... registry.i
-	@echo ... registry.s
+	@echo ... registry/registries_generator.obj
+	@echo ... registry/registries_generator.i
+	@echo ... registry/registries_generator.s
+	@echo ... registry/registry.obj
+	@echo ... registry/registry.i
+	@echo ... registry/registry.s
+	@echo ... statistic.obj
+	@echo ... statistic.i
+	@echo ... statistic.s
 .PHONY : help
 
 

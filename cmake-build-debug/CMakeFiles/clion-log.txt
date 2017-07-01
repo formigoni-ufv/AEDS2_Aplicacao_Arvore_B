@@ -1,4 +1,4 @@
-"C:\Program Files\JetBrains\CLion 2017.1.1\bin\cmake\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" "D:\Cloud_Storage\Google Drive\Faculdade\Semestre 3\AEDS II\Trabalhos Praticos\AEDS2_Aplicacao_Arvore_B"
+"C:\Program Files\JetBrains\CLion 2017.1.3\bin\cmake\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" "D:\Cloud_Storage\Google Drive\Faculdade\Semestre 3\AEDS II\Trabalhos Praticos\AEDS2_Aplicacao_Arvore_B"
 -- Configuring done
 -- Generating done
 -- Build files have been written to: D:/Cloud_Storage/Google Drive/Faculdade/Semestre 3/AEDS II/Trabalhos Praticos/AEDS2_Aplicacao_Arvore_B/cmake-build-debug

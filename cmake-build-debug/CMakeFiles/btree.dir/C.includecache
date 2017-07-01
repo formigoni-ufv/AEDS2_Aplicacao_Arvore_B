@@ -1,0 +1,74 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/Cloud_Storage/Google Drive/Faculdade/Semestre 3/AEDS II/Trabalhos Praticos/AEDS2_Aplicacao_Arvore_B/b_tree.c
+stdio.h
+-
+stdlib.h
+-
+statistic.h
+D:/Cloud_Storage/Google Drive/Faculdade/Semestre 3/AEDS II/Trabalhos Praticos/AEDS2_Aplicacao_Arvore_B/statistic.h
+b_tree.h
+D:/Cloud_Storage/Google Drive/Faculdade/Semestre 3/AEDS II/Trabalhos Praticos/AEDS2_Aplicacao_Arvore_B/b_tree.h
+registry/registry.h
+D:/Cloud_Storage/Google Drive/Faculdade/Semestre 3/AEDS II/Trabalhos Praticos/AEDS2_Aplicacao_Arvore_B/registry/registry.h
+
+D:/Cloud_Storage/Google Drive/Faculdade/Semestre 3/AEDS II/Trabalhos Praticos/AEDS2_Aplicacao_Arvore_B/b_tree.h
+registry/registry.h
+D:/Cloud_Storage/Google Drive/Faculdade/Semestre 3/AEDS II/Trabalhos Praticos/AEDS2_Aplicacao_Arvore_B/registry/registry.h
+
+D:/Cloud_Storage/Google Drive/Faculdade/Semestre 3/AEDS II/Trabalhos Praticos/AEDS2_Aplicacao_Arvore_B/main.c
+stdio.h
+-
+stdlib.h
+-
+time.h
+-
+b_tree.h
+D:/Cloud_Storage/Google Drive/Faculdade/Semestre 3/AEDS II/Trabalhos Praticos/AEDS2_Aplicacao_Arvore_B/b_tree.h
+registry/registries_generator.h
+D:/Cloud_Storage/Google Drive/Faculdade/Semestre 3/AEDS II/Trabalhos Praticos/AEDS2_Aplicacao_Arvore_B/registry/registries_generator.h
+statistic.h
+D:/Cloud_Storage/Google Drive/Faculdade/Semestre 3/AEDS II/Trabalhos Praticos/AEDS2_Aplicacao_Arvore_B/statistic.h
+registry/registry.h
+D:/Cloud_Storage/Google Drive/Faculdade/Semestre 3/AEDS II/Trabalhos Praticos/AEDS2_Aplicacao_Arvore_B/registry/registry.h
+
+D:/Cloud_Storage/Google Drive/Faculdade/Semestre 3/AEDS II/Trabalhos Praticos/AEDS2_Aplicacao_Arvore_B/registry/registries_generator.c
+stdlib.h
+-
+string.h
+-
+registries_generator.h
+D:/Cloud_Storage/Google Drive/Faculdade/Semestre 3/AEDS II/Trabalhos Praticos/AEDS2_Aplicacao_Arvore_B/registry/registries_generator.h
+registry.h
+D:/Cloud_Storage/Google Drive/Faculdade/Semestre 3/AEDS II/Trabalhos Praticos/AEDS2_Aplicacao_Arvore_B/registry/registry.h
+
+D:/Cloud_Storage/Google Drive/Faculdade/Semestre 3/AEDS II/Trabalhos Praticos/AEDS2_Aplicacao_Arvore_B/registry/registries_generator.h
+stdio.h
+-
+registry.h
+D:/Cloud_Storage/Google Drive/Faculdade/Semestre 3/AEDS II/Trabalhos Praticos/AEDS2_Aplicacao_Arvore_B/registry/registry.h
+
+D:/Cloud_Storage/Google Drive/Faculdade/Semestre 3/AEDS II/Trabalhos Praticos/AEDS2_Aplicacao_Arvore_B/registry/registry.c
+stdio.h
+-
+string.h
+-
+registry.h
+D:/Cloud_Storage/Google Drive/Faculdade/Semestre 3/AEDS II/Trabalhos Praticos/AEDS2_Aplicacao_Arvore_B/registry/registry.h
+
+D:/Cloud_Storage/Google Drive/Faculdade/Semestre 3/AEDS II/Trabalhos Praticos/AEDS2_Aplicacao_Arvore_B/registry/registry.h
+
+D:/Cloud_Storage/Google Drive/Faculdade/Semestre 3/AEDS II/Trabalhos Praticos/AEDS2_Aplicacao_Arvore_B/statistic.c
+stdio.h
+-
+statistic.h
+D:/Cloud_Storage/Google Drive/Faculdade/Semestre 3/AEDS II/Trabalhos Praticos/AEDS2_Aplicacao_Arvore_B/statistic.h
+
+D:/Cloud_Storage/Google Drive/Faculdade/Semestre 3/AEDS II/Trabalhos Praticos/AEDS2_Aplicacao_Arvore_B/statistic.h
+

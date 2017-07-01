@@ -1,3 +1,0 @@
-"C:\Program Files\JetBrains\CLion 2017.1.1\bin\cmake\bin\cmake.exe" -E remove -f CMakeFiles\AEDS2_Aplicacao_Arvore_B.dir/objects.a
-C:\MinGW\bin\ar.exe cr CMakeFiles\AEDS2_Aplicacao_Arvore_B.dir/objects.a @CMakeFiles\AEDS2_Aplicacao_Arvore_B.dir\objects1.rsp
-C:\MinGW\bin\gcc.exe  -g   -Wl,--whole-archive CMakeFiles\AEDS2_Aplicacao_Arvore_B.dir/objects.a -Wl,--no-whole-archive  -o AEDS2_Aplicacao_Arvore_B.exe -Wl,--out-implib,libAEDS2_Aplicacao_Arvore_B.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\AEDS2_Aplicacao_Arvore_B.dir\linklibs.rsp
