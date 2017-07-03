@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 #include "statistic.h"
 
 void STATS_RESET(){
@@ -20,10 +21,32 @@ void STATS_PRINT(){
 	printf("Reads: %d\nWrites: %d\nComparisons: %d\n", read_amount, write_amount, comparisons_amount);
 }
 
-void STATS_DISKREAD(){
+int STATS_SCAN(char selection){
 	FILE* stats;
 	int read_amount, write_amount, comparisons_amount;
 	char dummy[13];
+
+	stats = fopen("statistic.txt", "r");
+	fscanf(stats, "%s %d %s %d %s %d", dummy, &read_amount, dummy, &write_amount, dummy, &comparisons_amount);
+	fclose(stats);
+
+	if(selection == 'r'){
+		return read_amount;
+	}else if(selection == 'w'){
+		return write_amount;
+	}else{
+		return comparisons_amount;
+	}
+}
+
+void STATS_DISKREAD(int* isRoot){
+	FILE* stats;
+	int read_amount, write_amount, comparisons_amount;
+	char dummy[13];
+
+	if(isRoot != NULL){
+		if(*isRoot) return;
+	}
 
 	stats = fopen("statistic.txt", "r");
 	fscanf(stats, "%s %d %s %d %s %d", dummy, &read_amount, dummy, &write_amount, dummy, &comparisons_amount);
@@ -36,10 +59,14 @@ void STATS_DISKREAD(){
 	fclose(stats);
 }
 
-void STATS_DISKWRITE(){
+void STATS_DISKWRITE(int* isRoot){
 	FILE* stats;
 	int read_amount, write_amount, comparisons_amount;
 	char dummy[13];
+
+	if(isRoot != NULL){
+		if(*isRoot) return;
+	}
 
 	stats = fopen("statistic.txt", "r");
 	fscanf(stats, "%s %d %s %d %s %d", dummy, &read_amount, dummy, &write_amount, dummy, &comparisons_amount);

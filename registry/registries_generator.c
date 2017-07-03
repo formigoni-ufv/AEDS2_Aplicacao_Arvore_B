@@ -2,22 +2,23 @@
 #include <string.h>
 #include "registries_generator.h"
 #include "registry.h"
+#include "Fisher_Yates.h"
 
-void REGEN_GEN(FILE** input){
+void REGEN_GEN(FILE** input, int* admission_number_vector[]){
 	int i;
 	Registry reg;
-	int admission_number = 1;
 	char name0[NAME_LENGTH], name1[NAME_LENGTH];
 	char admission_date[ADMISSDATE_LENGTH];
 	char occupation[OC_LENGTH];
 	char status[CIVILSTAT_LENGTH];
 
+	FY_Shuffle(admission_number_vector, NAMESSCANNED);
+
 	FILE* output = fopen("registry/registries_generated.txt", "wt");
 
-	for(i=0; i<REGSTOBESCANNED; i++){
+	for(i=0; i<NAMESSCANNED; i++){
 		//ADMISSION NUMBER
-		reg.admission_number = admission_number;
-		admission_number++;
+		reg.admission_number = (*admission_number_vector)[i];
 
 		//NAME
 		fscanf(*input, "%s %s", name0, name1);

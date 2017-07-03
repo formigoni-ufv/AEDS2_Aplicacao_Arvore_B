@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Registros', 'Leituras', 'Escritas', 'Comparacoes'],
+          ['1000',  5096, 3210, 19051],
+          ['2000',  11521, 6525, 41860],
+          ['3000',  18132, 9894, 65609],
+          ['4000',  24665, 13145, 90002],
+          ['5000',  31616, 16478, 115163],
+          ['6000',  39272, 19930, 141162],
+          ['7000',  46721, 23069, 167262],
+          ['8000',  54157, 26205, 193479],
+          ['9000',  61747, 29559, 219984],
+          ['10000',  69300, 32842, 246776]
+        ]);
+        var options = {
+          curveType: 'function',
+          legend: { position: 'bottom' }
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="curve_chart" style="width: 1400px; height: 800px"></div>
+  </body>
+</html>

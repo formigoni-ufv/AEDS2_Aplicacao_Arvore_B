@@ -6,12 +6,21 @@ CMakeFiles/btree.dir/b_tree.c.obj: ../b_tree.h
 CMakeFiles/btree.dir/b_tree.c.obj: ../registry/registry.h
 CMakeFiles/btree.dir/b_tree.c.obj: ../statistic.h
 
+CMakeFiles/btree.dir/graph/graph_generator.c.obj: ../graph/graph_generator.c
+CMakeFiles/btree.dir/graph/graph_generator.c.obj: ../graph/graph_generator.h
+CMakeFiles/btree.dir/graph/graph_generator.c.obj: ../statistic.h
+
 CMakeFiles/btree.dir/main.c.obj: ../b_tree.h
+CMakeFiles/btree.dir/main.c.obj: ../graph/graph_generator.h
 CMakeFiles/btree.dir/main.c.obj: ../main.c
 CMakeFiles/btree.dir/main.c.obj: ../registry/registries_generator.h
 CMakeFiles/btree.dir/main.c.obj: ../registry/registry.h
 CMakeFiles/btree.dir/main.c.obj: ../statistic.h
 
+CMakeFiles/btree.dir/registry/Fisher_Yates.c.obj: ../registry/Fisher_Yates.c
+CMakeFiles/btree.dir/registry/Fisher_Yates.c.obj: ../registry/Fisher_Yates.h
+
+CMakeFiles/btree.dir/registry/registries_generator.c.obj: ../registry/Fisher_Yates.h
 CMakeFiles/btree.dir/registry/registries_generator.c.obj: ../registry/registries_generator.c
 CMakeFiles/btree.dir/registry/registries_generator.c.obj: ../registry/registries_generator.h
 CMakeFiles/btree.dir/registry/registries_generator.c.obj: ../registry/registry.h

@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Registros', 'Leituras', 'Escritas', 'Comparacoes'],
+          ['500',  446, 539, 44273],
+          ['1000',  976, 1085, 93579],
+          ['1500',  1530, 1667, 144942],
+          ['2000',  2043, 2186, 197673],
+          ['2500',  2603, 2774, 255765],
+          ['3000',  3140, 3329, 312248],
+          ['3500',  3665, 3868, 372678],
+          ['4000',  4184, 4397, 436428],
+          ['4500',  4741, 4980, 504354],
+          ['5000',  5783, 5554, 561299],
+          ['5500',  6807, 6090, 617984],
+          ['6000',  7837, 6636, 675999],
+          ['6500',  8856, 7165, 735168],
+          ['7000',  9883, 7706, 797785],
+          ['7500',  10909, 8244, 862467],
+          ['8000',  11968, 8833, 928616],
+          ['8500',  13020, 9409, 993340],
+          ['9000',  14088, 10009, 1055025],
+          ['9500',  15123, 10562, 1114717],
+          ['10000',  16153, 11108, 1170711]
+        ]);
+        var options = {
+          curveType: 'function',
+          legend: { position: 'bottom' }
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="curve_chart" style="width: 2400px; height: 800px"></div>
+  </body>
+</html>

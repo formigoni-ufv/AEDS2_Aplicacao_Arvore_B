@@ -1,3 +1,8 @@
+/*****************************************
+Alunos: Ruan Evangelista Formigoni - 2661
+        Matheus da Silva Alves - 2649
+******************************************/
+
 #ifndef AEDS2_APLICACAO_ARVORE_B_REGISTRY_H
 #define AEDS2_APLICACAO_ARVORE_B_REGISTRY_H
 #define NAME_LENGTH 30

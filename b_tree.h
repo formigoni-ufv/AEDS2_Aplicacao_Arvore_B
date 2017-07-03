@@ -1,7 +1,12 @@
+/*****************************************
+Alunos: Ruan Evangelista Formigoni - 2661
+        Matheus da Silva Alves - 2649
+******************************************/
+
 #ifndef AEDS2_APLICACAO_ARVORE_B_B_TREE_H
 #define AEDS2_APLICACAO_ARVORE_B_B_TREE_H
 #include"registry/registry.h"
-#define M 2
+#define M 40
 #define MM M*2
 
 typedef struct Page* Page_Pointer;
@@ -15,6 +20,7 @@ typedef struct Page{
 void BTREE_INIT(Page_Pointer* tree);
 
 /*****************************************PESQUISA***********************************************/
+void BTREE_SSEARCH(Registry *data, Page_Pointer tree, int* found, int* root);
 void BTREE_SEARCH(Registry *data, Page_Pointer tree, int* found);
 
 /***********************************INSERCAO DE REGISTROS*****************************************/
@@ -24,8 +30,8 @@ void BTREE_INSERT(Registry data, Page_Pointer* tree);
 
 /***********************************REMOCAO DE REGISTROS*****************************************/
 void BTREE_RECONSTITUTE(Page_Pointer ApPag, Page_Pointer ApPai, int PosPai, short* Diminuiu);
-void BTREE_PREDECESSOR(Page_Pointer Ap, int lnd, Page_Pointer ApPai, short *Diminuiu);
-void BTREE_REM(Registry Ch, Page_Pointer *Ap, short *Diminuiu, int* recursivelevel);
+void BTREE_PREDECESSOR(Page_Pointer Ap, int lnd, Page_Pointer ApPai, short *Diminuiu, int* recursivelevel);
+void BTREE_REM(Registry Ch, Page_Pointer *Ap, short *Diminuiu, int* recursivelevel, int* isRoot);
 void BTREE_REMOVE(Registry Ch, Page_Pointer *Ap);
 
 /*****************************************ALTURA***********************************************/

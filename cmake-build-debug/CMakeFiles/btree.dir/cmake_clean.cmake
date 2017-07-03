@@ -4,6 +4,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/btree.dir/registry/registries_generator.c.obj"
   "CMakeFiles/btree.dir/registry/registry.c.obj"
   "CMakeFiles/btree.dir/statistic.c.obj"
+  "CMakeFiles/btree.dir/graph/graph_generator.c.obj"
+  "CMakeFiles/btree.dir/registry/Fisher_Yates.c.obj"
   "btree.pdb"
   "btree.exe"
   "btree.exe.manifest"

@@ -55,17 +55,6 @@ CMAKE_BINARY_DIR = "D:\Cloud_Storage\Google Drive\Faculdade\Semestre 3\AEDS II\T
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	"C:\Program Files\JetBrains\CLion 2017.1.3\bin\cmake\bin\cmake.exe" -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -76,6 +65,17 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	"C:\Program Files\JetBrains\CLion 2017.1.3\bin\cmake\bin\cmake.exe" -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -110,17 +110,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named btree
+# Target rules for targets named main
 
 # Build rule for target.
-btree: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 btree
-.PHONY : btree
+main: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 main
+.PHONY : main
 
 # fast build rule for target.
-btree/fast:
-	$(MAKE) -f CMakeFiles\btree.dir\build.make CMakeFiles/btree.dir/build
-.PHONY : btree/fast
+main/fast:
+	$(MAKE) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/build
+.PHONY : main/fast
 
 b_tree.obj: b_tree.c.obj
 
@@ -128,7 +128,7 @@ b_tree.obj: b_tree.c.obj
 
 # target to build an object file
 b_tree.c.obj:
-	$(MAKE) -f CMakeFiles\btree.dir\build.make CMakeFiles/btree.dir/b_tree.c.obj
+	$(MAKE) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/b_tree.c.obj
 .PHONY : b_tree.c.obj
 
 b_tree.i: b_tree.c.i
@@ -137,7 +137,7 @@ b_tree.i: b_tree.c.i
 
 # target to preprocess a source file
 b_tree.c.i:
-	$(MAKE) -f CMakeFiles\btree.dir\build.make CMakeFiles/btree.dir/b_tree.c.i
+	$(MAKE) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/b_tree.c.i
 .PHONY : b_tree.c.i
 
 b_tree.s: b_tree.c.s
@@ -146,8 +146,35 @@ b_tree.s: b_tree.c.s
 
 # target to generate assembly for a file
 b_tree.c.s:
-	$(MAKE) -f CMakeFiles\btree.dir\build.make CMakeFiles/btree.dir/b_tree.c.s
+	$(MAKE) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/b_tree.c.s
 .PHONY : b_tree.c.s
+
+graph/graph_generator.obj: graph/graph_generator.c.obj
+
+.PHONY : graph/graph_generator.obj
+
+# target to build an object file
+graph/graph_generator.c.obj:
+	$(MAKE) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/graph/graph_generator.c.obj
+.PHONY : graph/graph_generator.c.obj
+
+graph/graph_generator.i: graph/graph_generator.c.i
+
+.PHONY : graph/graph_generator.i
+
+# target to preprocess a source file
+graph/graph_generator.c.i:
+	$(MAKE) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/graph/graph_generator.c.i
+.PHONY : graph/graph_generator.c.i
+
+graph/graph_generator.s: graph/graph_generator.c.s
+
+.PHONY : graph/graph_generator.s
+
+# target to generate assembly for a file
+graph/graph_generator.c.s:
+	$(MAKE) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/graph/graph_generator.c.s
+.PHONY : graph/graph_generator.c.s
 
 main.obj: main.c.obj
 
@@ -155,7 +182,7 @@ main.obj: main.c.obj
 
 # target to build an object file
 main.c.obj:
-	$(MAKE) -f CMakeFiles\btree.dir\build.make CMakeFiles/btree.dir/main.c.obj
+	$(MAKE) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/main.c.obj
 .PHONY : main.c.obj
 
 main.i: main.c.i
@@ -164,7 +191,7 @@ main.i: main.c.i
 
 # target to preprocess a source file
 main.c.i:
-	$(MAKE) -f CMakeFiles\btree.dir\build.make CMakeFiles/btree.dir/main.c.i
+	$(MAKE) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/main.c.i
 .PHONY : main.c.i
 
 main.s: main.c.s
@@ -173,8 +200,35 @@ main.s: main.c.s
 
 # target to generate assembly for a file
 main.c.s:
-	$(MAKE) -f CMakeFiles\btree.dir\build.make CMakeFiles/btree.dir/main.c.s
+	$(MAKE) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/main.c.s
 .PHONY : main.c.s
+
+registry/Fisher_Yates.obj: registry/Fisher_Yates.c.obj
+
+.PHONY : registry/Fisher_Yates.obj
+
+# target to build an object file
+registry/Fisher_Yates.c.obj:
+	$(MAKE) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/registry/Fisher_Yates.c.obj
+.PHONY : registry/Fisher_Yates.c.obj
+
+registry/Fisher_Yates.i: registry/Fisher_Yates.c.i
+
+.PHONY : registry/Fisher_Yates.i
+
+# target to preprocess a source file
+registry/Fisher_Yates.c.i:
+	$(MAKE) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/registry/Fisher_Yates.c.i
+.PHONY : registry/Fisher_Yates.c.i
+
+registry/Fisher_Yates.s: registry/Fisher_Yates.c.s
+
+.PHONY : registry/Fisher_Yates.s
+
+# target to generate assembly for a file
+registry/Fisher_Yates.c.s:
+	$(MAKE) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/registry/Fisher_Yates.c.s
+.PHONY : registry/Fisher_Yates.c.s
 
 registry/registries_generator.obj: registry/registries_generator.c.obj
 
@@ -182,7 +236,7 @@ registry/registries_generator.obj: registry/registries_generator.c.obj
 
 # target to build an object file
 registry/registries_generator.c.obj:
-	$(MAKE) -f CMakeFiles\btree.dir\build.make CMakeFiles/btree.dir/registry/registries_generator.c.obj
+	$(MAKE) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/registry/registries_generator.c.obj
 .PHONY : registry/registries_generator.c.obj
 
 registry/registries_generator.i: registry/registries_generator.c.i
@@ -191,7 +245,7 @@ registry/registries_generator.i: registry/registries_generator.c.i
 
 # target to preprocess a source file
 registry/registries_generator.c.i:
-	$(MAKE) -f CMakeFiles\btree.dir\build.make CMakeFiles/btree.dir/registry/registries_generator.c.i
+	$(MAKE) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/registry/registries_generator.c.i
 .PHONY : registry/registries_generator.c.i
 
 registry/registries_generator.s: registry/registries_generator.c.s
@@ -200,7 +254,7 @@ registry/registries_generator.s: registry/registries_generator.c.s
 
 # target to generate assembly for a file
 registry/registries_generator.c.s:
-	$(MAKE) -f CMakeFiles\btree.dir\build.make CMakeFiles/btree.dir/registry/registries_generator.c.s
+	$(MAKE) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/registry/registries_generator.c.s
 .PHONY : registry/registries_generator.c.s
 
 registry/registry.obj: registry/registry.c.obj
@@ -209,7 +263,7 @@ registry/registry.obj: registry/registry.c.obj
 
 # target to build an object file
 registry/registry.c.obj:
-	$(MAKE) -f CMakeFiles\btree.dir\build.make CMakeFiles/btree.dir/registry/registry.c.obj
+	$(MAKE) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/registry/registry.c.obj
 .PHONY : registry/registry.c.obj
 
 registry/registry.i: registry/registry.c.i
@@ -218,7 +272,7 @@ registry/registry.i: registry/registry.c.i
 
 # target to preprocess a source file
 registry/registry.c.i:
-	$(MAKE) -f CMakeFiles\btree.dir\build.make CMakeFiles/btree.dir/registry/registry.c.i
+	$(MAKE) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/registry/registry.c.i
 .PHONY : registry/registry.c.i
 
 registry/registry.s: registry/registry.c.s
@@ -227,7 +281,7 @@ registry/registry.s: registry/registry.c.s
 
 # target to generate assembly for a file
 registry/registry.c.s:
-	$(MAKE) -f CMakeFiles\btree.dir\build.make CMakeFiles/btree.dir/registry/registry.c.s
+	$(MAKE) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/registry/registry.c.s
 .PHONY : registry/registry.c.s
 
 statistic.obj: statistic.c.obj
@@ -236,7 +290,7 @@ statistic.obj: statistic.c.obj
 
 # target to build an object file
 statistic.c.obj:
-	$(MAKE) -f CMakeFiles\btree.dir\build.make CMakeFiles/btree.dir/statistic.c.obj
+	$(MAKE) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/statistic.c.obj
 .PHONY : statistic.c.obj
 
 statistic.i: statistic.c.i
@@ -245,7 +299,7 @@ statistic.i: statistic.c.i
 
 # target to preprocess a source file
 statistic.c.i:
-	$(MAKE) -f CMakeFiles\btree.dir\build.make CMakeFiles/btree.dir/statistic.c.i
+	$(MAKE) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/statistic.c.i
 .PHONY : statistic.c.i
 
 statistic.s: statistic.c.s
@@ -254,7 +308,7 @@ statistic.s: statistic.c.s
 
 # target to generate assembly for a file
 statistic.c.s:
-	$(MAKE) -f CMakeFiles\btree.dir\build.make CMakeFiles/btree.dir/statistic.c.s
+	$(MAKE) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/statistic.c.s
 .PHONY : statistic.c.s
 
 # Help Target
@@ -263,15 +317,21 @@ help:
 	@echo ... all (the default if no target is provided)
 	@echo ... clean
 	@echo ... depend
-	@echo ... rebuild_cache
-	@echo ... btree
 	@echo ... edit_cache
+	@echo ... main
+	@echo ... rebuild_cache
 	@echo ... b_tree.obj
 	@echo ... b_tree.i
 	@echo ... b_tree.s
+	@echo ... graph/graph_generator.obj
+	@echo ... graph/graph_generator.i
+	@echo ... graph/graph_generator.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... registry/Fisher_Yates.obj
+	@echo ... registry/Fisher_Yates.i
+	@echo ... registry/Fisher_Yates.s
 	@echo ... registry/registries_generator.obj
 	@echo ... registry/registries_generator.i
 	@echo ... registry/registries_generator.s
